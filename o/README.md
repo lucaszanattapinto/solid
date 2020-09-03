@@ -38,7 +38,7 @@ class SupplierValidatorByName(ISupplierValidator):
     def validate(self):
         # validate supplier by name
 
-def get_supplier_validator(self, country_code) -> ISupplierValidator:
+def supplier_validator_factory(self, country_code) -> ISupplierValidator:
     if country_code == 'BR':
         return SupplierValidatorByTax()
     elif country_code == 'CL':
@@ -49,9 +49,9 @@ def validate(country_code):
     # fields validations
     # ...
 
-    validator = get_supplier_validator(country_code)
+    validator = supplier_validator_factory(country_code)
     validator.validate()
 ```
 
-Dessa forma, a função `validate` está fechada para modificação, mas aberta para extensão.  
+Dessa forma, a função `validate` está fechada para modificação, mas aberta para extensão. Isso significa que para adicionar um país com uma validação nova, não precisamos alterá-la. Basta criar uma nova classe e adicionar mais um caso na factory.  
 PS.: O `ISupplierValidator` é opcional, pois como se trata de python, o polimorfismo pode ser realizado através do `duck typing`

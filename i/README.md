@@ -16,7 +16,7 @@ class Beer(ABC):
     def get_malt_amount(self):
         raise NotImplementedError
 
-class Skol(Beer):
+class NotSoGood(Beer):
     def get_corn_amount(self):
         return 'alot!'
     
@@ -26,9 +26,9 @@ class Skol(Beer):
     def get_malt_amount(self):
         return 'a little!'
 
-class Heineken(Beer):
+class Niceru(Beer):
     def get_corn_amount(self):
-        raise Exception('Heineken does not have corn in its formula')
+        raise Exception('Niceru does not have corn in its formula')
 
     def get_hop_amount(self):
         return 'considerable amount'
@@ -56,7 +56,7 @@ class Corn(ABC):
     def get_corn_amount(self):
         raise NotImplementedError
 
-class Skol(Beer, Hop, Corn):
+class NotSoGood(Beer, Hop, Corn):
     def get_corn_amount(self):
         return 'alot!'
     
@@ -66,7 +66,7 @@ class Skol(Beer, Hop, Corn):
     def get_malt_amount(self):
         return 'a little!'
 
-class Heineken(Beer, Hop):
+class Niceru(Beer, Hop):
     def get_hop_amount(self):
         return 'considerable amount'
 

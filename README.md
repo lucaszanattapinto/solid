@@ -30,4 +30,8 @@ Para uma linguagem ser orientada a objetos, ela deve suportar **Herança**, **En
 
 Em linguagens fortemente tipadas conseguimos realizar o polimorfismo através de **herança**, já em linguagens dinamicamente tipadas temos o conceito de **Duck Typing** que desburocratiza bastante esse processo.
 
-![Duck Typing](https://pics.me.me/duck-typing-duck-typing-2429782.png)
+<img src="https://pics.me.me/duck-typing-duck-typing-2429782.png" width="300" height="300" alt="Duck Typing"/>
+
+# Disclaimer
+
+Os princípios não compõem um mantra, portanto não se deve buscar o atingimento de todos obrigatoriamente. Há casos e linguagens em que a implementação de alguns dos princípios não é justificável, ou mesmo possível. Use-os a seu favor para construir um software mais robusto, mas sempre de olho no over engineering.

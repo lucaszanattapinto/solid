@@ -2,13 +2,11 @@
 
 > Se q(x) é uma propriedade demonstrável dos objetos x de tipo T. Então q(y) deve ser verdadeiro para objetos y de tipo S onde S é um subtipo de T.
 
-![Mother of God](https://i.kym-cdn.com/entries/icons/facebook/000/004/029/motherofgod.jpg)
+<img src="https://i.kym-cdn.com/entries/icons/facebook/000/004/029/motherofgod.jpg" width="300" height="150" alt="Mother of God"/>
 
 Traduzindo para o pt-br: classes derivadas devem ser substituíveis por suas classes bases sem nenhum colateral.  
 
-Basicamente, esse princípio serve para nos alertar quanto a criação de abstrações problemáticas.
-
-A forma mais simples de explicar esse princípio é com o exemplo do quadrado x retângulo
+Basicamente, esse princípio serve para nos alertar quanto a criação de abstrações problemáticas. A forma mais simples de explicá-lo é com o exemplo do quadrado x retângulo
 
 ```python
 class Rectangle:
